@@ -23,6 +23,8 @@ router.post('/api/cams', function(req,res){
     cam.answer3=req.body.answer3;
     cam.sex=req.body.sex;
     cam.age=req.body.age;
+    cam.probation=req.body.probation;
+    cam.comment=req.body.comment;
     
     cam.save(function(err){
         if(err){

@@ -1,4 +1,5 @@
 var express=require('express');
+var cors=require('cors');
 var mongoose=require('mongoose');
 var logger=require('morgan');
 var bodyParser=require('body-parser');
@@ -15,6 +16,7 @@ var router=require('./routes');
 var app= express();
 var port=3000;
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
