@@ -16,7 +16,6 @@ var Schema=new Schema({
     },
     answer3:{
         type : Number,
-        required: true
     },
     sex:{
         type : Number,
