@@ -20,11 +20,9 @@ var Schema=new Schema({
     },
     sex:{
         type : Number,
-        required: true
     },
     age:{
         type : Number,
-        required: true
     },
     probation:{
         type : Number,

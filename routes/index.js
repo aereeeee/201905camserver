@@ -11,7 +11,7 @@ router.get('/api/cams', function(req,res){
 router.get('/api/cams/:accId', function(req,res){
    Cam.find({accId:req.params.accId},function(err, cams){
        if(err) return res.status(500),json({error:err});
-       if(!cams) return res.status(404).json({error:'선택한 유형에 대한 데이터가 없습니다'});
+       if(!cams) return res.status(404).json({error:'선택한 사건에 대한 데이터가 없습니다'});
        res.json(cams);
    })
 });
